@@ -1,0 +1,37 @@
+Upute
+
+Za izradu laboratorijske vježbe koristi se programski jezik Python. Zadaci su zadani u obliku Jupyter bilježnice koju treba nadopuniti. Za rješavanje se može koristiti besplatna Google Colab usluga ili se može lokalno postaviti Python/Jupyter radna okolina. Preporuča se Google Colab varijanta radi lakšeg postavljanja radne okoline dok se lokalni Python/Jupyter ostavlja za one koji žele znati više.
+
+Google Colab
+- LInk na Google Colab: https://colab.research.google.com/
+
+Google Colab je Jupyter bilježnica koja se izvršava na Googleovim serverima. Ulogirajte se sa svojim Google accountom i prebacite bilježnicu labosa na Colab. Vaša bilježnica se sprema u Google Driveu. Limitirajući faktor je što se Vaša instanca ne može raditi duže od 12h od jednom i što povremeno besplatne GPU instance nisu dostupne. Rezultati se mogu normalno spremati i oni se ne brišu. Pripazite na rok! "Nisam mogao dobiti GPU" nije valjani razlog zašto nemate napravljenu vježbu.
+
+Da biste bili sigurni da koristite GPU instancu, u alatnoj traci pritisnite na "Runtime" → "Change runtime type" i iz padajućeg izbornika odaberite "GPU".
+
+U Colabu nije potrebno podešavati environment.
+
+Lokalni Python i Jupyter
+Za postavljanje lokalne radne okoline preporuča se Anaconda distribucija koja uključuje većinu potrebnih Python paketa za izradu vježbe.
+
+- Upute za postavljanje radne okoline za Linux se mogu naći ovdje: https://docs.anaconda.com/anaconda/install/linux/
+- Upute za postavljanje radne okoline za Windows se mogu naći ovdje: https://docs.anaconda.com/anaconda/install/windows/
+- Upute za postavljanje radne okoline za macOS se mogu naći ovdje: https://docs.anaconda.com/anaconda/install/mac-os/
+
+Preporuča se korištenje posebnog conda environmenta za rješavanje vježbe.
+
+- Upute kako rukovati s conda environmentima mogu se naći ovdje: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+
+Jupyter Notebook ili JupyterLab
+Za popunjavanje bilježnice može se koristiti Jupyter Notebook ili JupyterLab. Jupyter Notebook dolazi instaliran sa Anacondom, dok se JupyterLab može naknadno instalirati po sljedećim uputama: https://jupyter.org/install.
+
+- Upute za korištenje Jupytera možete naći ovdje: https://www.dataquest.io/blog/jupyter-notebook-tutorial/
+
+Dodavanje Conda Environmenta u Jupyter Notebook/Lab
+Da bi Vaš conda environment bio lako dostupan u Jupyter Notebook/Lab, potrebno je instalirati paket nb_conda_kernels:
+
+conda install -c conda-forge nb_conda_kernels
+
+U environmentu kojem želite pristupiti potrebno je instalirati paket ipykernel:
+
+conda install ipykernel
